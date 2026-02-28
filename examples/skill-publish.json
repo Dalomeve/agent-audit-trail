@@ -1,0 +1,43 @@
+{
+  "session_id": "ats_20260301_abc123",
+  "task": "Publish skill to ClawHub",
+  "started_at": "2026-03-01T15:30:00Z",
+  "completed_at": "2026-03-01T15:45:00Z",
+  "duration_seconds": 900,
+  "outcome": "success",
+  "actions": [
+    {
+      "timestamp": "2026-03-01T15:31:00Z",
+      "type": "file_create",
+      "description": "Created SKILL.md",
+      "artifact": "skills/my-skill/SKILL.md"
+    },
+    {
+      "timestamp": "2026-03-01T15:35:00Z",
+      "type": "git_commit",
+      "description": "Committed skill files",
+      "metadata": {"commit": "abc123def"}
+    },
+    {
+      "timestamp": "2026-03-01T15:40:00Z",
+      "type": "publish",
+      "description": "Published to ClawHub",
+      "artifact": "https://clawhub.ai/Dalomeve/my-skill"
+    }
+  ],
+  "evidence": [
+    {
+      "type": "url",
+      "value": "https://clawhub.ai/Dalomeve/my-skill",
+      "verified": true,
+      "description": "Published skill URL"
+    },
+    {
+      "type": "hash",
+      "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true,
+      "description": "SKILL.md SHA256"
+    }
+  ],
+  "summary": "Published skill v1.0.0 to ClawHub successfully"
+}
